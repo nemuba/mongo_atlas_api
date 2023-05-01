@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   SERVICE = Mongo::Atlas::Api::Users
 
   def index
-    render json: SERVICE.all(limit: 100)
+    render json: SERVICE.all(limit: params[:limit].to_i || 100)
   end
 
   def show

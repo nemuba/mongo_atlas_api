@@ -37,5 +37,7 @@ module AtlasApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.hosts << "ec62-2804-2e00-80b9-9400-117b-f446-edd7-56dc.ngrok-free.app"
   end
 end
